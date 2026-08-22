@@ -41,11 +41,14 @@ Commence alors un subtil jeu: si la KL loss est trop faible, un 5 et un 7 donnen
 
 Le premier VAE a un espace latent de 64 dimensions, pour un total de 837 763 paramètres 
 
-Les premiers chats sont très moyens et très flous:
+Les chats sont très moyens et très flous:
 
 ![alt text](image.png)
 
 ![alt text](image-1.png)
+
+![alt text](image-2.png)
+
 
 Même en changeant le beta (la pondération devant la KL loss) mes chats sont toujours flous.
 
@@ -55,4 +58,7 @@ Problèmes possible:
 
 - LOSS pas adapter: j'utilise une MSELoss (erreurs au carré): mes chats sont toujours aussi flou avec une L1Loss
 
--
+
+Pour l'instant je n'ai pas de piste d'amélioration, soit c'est une limite inhérente au VAE, soit il y un problème que je ne vois pas. Je n'ai pas vraiment de référence de chats pour un VAE sur un tel dataset donc je ne sais pas vraiment si je peux mieux faire.
+
+A noter que les chats ne sont pas simplement une "moyenne de tous les chats" ce qui indique que la KL loss est suffisamment élevée.
