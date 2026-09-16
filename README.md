@@ -1,8 +1,6 @@
 # Gen-chats
 Test de différents modèles de génération: AE-VAE-GAN-Diffusion
 
-# ProjetIA: Génération d'images
-
 Projet en cours 
 
 Projet personnel réalisé avec PyTorch qui a pour but d'explorer et de comprendre les modèles génératifs, en commençant par un autoencodeur sur MNIST
@@ -62,3 +60,10 @@ Problèmes possible:
 Pour l'instant je n'ai pas de piste d'amélioration, soit c'est une limite inhérente au VAE, soit il y un problème que je ne vois pas. Je n'ai pas vraiment de référence de chats pour un VAE sur un tel dataset donc je ne sais pas vraiment si je peux mieux faire.
 
 A noter que les chats ne sont pas simplement une "moyenne de tous les chats" ce qui indique que la KL loss est suffisamment élevée.
+
+
+## GAN
+
+L'idée du GAN est assez singulière et bien différente d'un VAE.
+
+Le problème rencontré avec le GAN est que mon ordinateur actuel ne contient pas de carte graphique et que les calculs dont plus important, chaque epoch met 8 minutes, et il me faut au moins 30 epoch pour avoir de jolies chats, là où il fallait quelques epoch au VAE pour arriver à son seuil.
