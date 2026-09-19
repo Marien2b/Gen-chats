@@ -67,3 +67,9 @@ A noter que les chats ne sont pas simplement une "moyenne de tous les chats" ce 
 L'idée du GAN est assez singulière et bien différente d'un VAE.
 
 Le problème rencontré avec le GAN est que mon ordinateur actuel ne contient pas de carte graphique et que les calculs dont plus important, chaque epoch met 8 minutes, et il me faut au moins 30 epoch pour avoir de jolies chats, là où il fallait quelques epoch au VAE pour arriver à son seuil.
+
+Voici deux chats obtenus avec 
+
+![alt text](cat_gan.png)
+
+![alt text](cat_gan2.png)
